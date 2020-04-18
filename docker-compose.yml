@@ -1,0 +1,38 @@
+version: '2.2'
+
+services: 
+  mysql: 
+    container_name: mysql
+    environment: 
+      MYSQL_DATABASE: db
+      MYSQL_PASSWORD: supersecret
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: blog-user
+    image: "mysql:5.7"
+    volumes: 
+      - "mysql-volume:/var/lib/mysql"
+
+ 
+  ghost:
+    build: ./ghost
+    image: 3bars/ghost:1.26.2
+    container_name: ghost
+    volumes:
+      - ghost-volume:/var/lib/ghost
+    restart: always
+    ports:
+      - 8080:2368
+    environment:
+      database__client: mysql
+      database__connection__host: mysql
+      database__connection__user: blog-user
+      database__connection__password: supersecret
+      database__connection__database: db
+    depends_on:
+      - mysql
+    entrypoint: ["wait-for-it.sh", "mysql", "--", "docker-entrypoint.sh"]
+    command: ["node", "current/index.js"]
+
+volumes:
+  mysql-volume:
+  ghost-volume:
