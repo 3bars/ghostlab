@@ -2,7 +2,7 @@
 
 ## This is just a test bed for understanding compose, containers, etc. This should not be used for production
 
-Version 1.26.2
+Version 3.13.3
 
 Start to finish
 
