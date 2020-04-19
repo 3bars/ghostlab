@@ -10,7 +10,7 @@ Start to finish
 
 2. `cd into ghostcontainers`
 
-3. `docker-compose -p "ghost-platform" -d up`
+3. `docker-compose -p "ghost-platform" up -d`
 
 4.  browse to localhost:8080 in a browser
 
