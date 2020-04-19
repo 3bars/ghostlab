@@ -1,17 +1,17 @@
-## Ghost Blog Container Setup
+# Ghost Blog Container Setup
 
-# This is just a test bed for understanding compose, containers, etc. This should not be used for production
+## This is just a test bed for understanding compose, containers, etc. This should not be used for production
 
 Version 1.26.2
 
 Start to finish
 
-git clone this repo
+1. `git clone this repo`
 
-cd into ghostcontainers
+2. `cd into ghostcontainers`
 
-docker-compose -p "ghost-platform" -d up
+3. `docker-compose -p "ghost-platform" -d up`
 
-browse to localhost:8080 in a browser
+4.  browse to localhost:8080 in a browser
 
-docker-compose -p ghost-platform stop
+5. `docker-compose -p ghost-platform stop`
