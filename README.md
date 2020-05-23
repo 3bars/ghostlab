@@ -20,4 +20,4 @@ Optional
 
 6. `sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`
 
-7. sudo chmod +x /usr/local/bin/docker-compose
+7. `sudo chmod +x /usr/local/bin/docker-compose`
