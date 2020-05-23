@@ -6,7 +6,7 @@ Version 1.26.2
 
 Start to finish
 
-1. `git clone this repo`
+1. `git clone https://github.com/3bars/ghostlab.git`
 
 2. `cd into ghostcontainers`
 
