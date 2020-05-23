@@ -8,10 +8,10 @@ Start to finish
 
 1. `git clone https://github.com/3bars/ghostlab.git`
 
-2. `cd into ghostcontainers`
+2. `cd ghostcontainers`
 
 3. `docker-compose -p "ghost-platform" up -d`
 
-4.  browse to localhost:8080 in a browser
+4.  browse to localhost:8080 in your favorite browser
 
 5. `docker-compose -p ghost-platform stop`
