@@ -15,3 +15,9 @@ Start to finish
 4.  browse to localhost:8080 in your favorite browser
 
 5. `docker-compose -p ghost-platform stop`
+
+Optional
+
+6. `sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`
+
+7. sudo chmod +x /usr/local/bin/docker-compose
