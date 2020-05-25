@@ -9,3 +9,5 @@ until mysql -hmysql -p"3306" -u"${database__connection__user}" -p"${database__co
 done
 >&2 echo "MySQL is up - executing command"
 exec "$@"
+
+# Fake Programmer
