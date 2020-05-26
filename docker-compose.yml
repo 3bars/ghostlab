@@ -15,7 +15,7 @@ services:
  
   ghost:
     build: ./ghost
-    image: 3bars/ghost:1.26.2
+    image: 3bars/ghost:3.16.1
     container_name: ghost
     volumes:
       - ghost-volume:/var/lib/ghost
